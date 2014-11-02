@@ -1,4 +1,14 @@
+<h1>This app is like</h1>
 <h1>Uber</h1>
 <h1>for</h1>
 <h1>Grocery. Fucking. Coupons.</h1>
-<p>Sign up here.</p>
+
+  </br>
+
+<% if user_signed_in? %>
+          <h1>YEEEAAAAAAAAHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!</h1>
+     <% else %>
+       <p>
+         <%= link_to "YOLO", new_user_registration_path, class: "btn btn-success btn-lg" %>
+       </p>
+  <% end %>  
