@@ -22,3 +22,11 @@ $jumbotron-bg:                                         white;
 .show {
 	background-image: url(http://payload88.cargocollective.com/1/8/282864/4079530/mountain_900.jpg)
 }
+
+.whitebackground {
+	background-color: #ecf0f1;
+}
+
+.centertext {
+	text-align: center;
+}
