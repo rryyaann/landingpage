@@ -1,9 +1,9 @@
 <%= image_tag @pin.image.url(:medium) %>
 
-<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
+<h1>This app gonna be like</h1>
+<h1>
+  <strong></strong><%= @pin.description %></strong><h1><i>for</i> grocery. fucking. coupons.</h1>
+</h1>
 
 <% if @pin.user == current_user %>
   <%= link_to 'Edit', edit_pin_path(@pin) %> 
