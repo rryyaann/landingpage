@@ -5,4 +5,8 @@ class Pin < ActiveRecord::Base
 
      validates :image, presence: true
      validates :description, presence: true
+     validates :button, presence: true
+     validates :testimonialtop, presence: true
+     validates :testimonialbottom, presence: true
+     validates :company, presence: true
 end
