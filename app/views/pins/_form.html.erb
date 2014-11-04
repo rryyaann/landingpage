@@ -1,3 +1,5 @@
+
+
 <%= form_for @pin, html: { multipart: true } do |f| %>
   <% if @pin.errors.any? %>
     <div id="error_explanation">
@@ -45,3 +47,5 @@
     <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>
+
+
