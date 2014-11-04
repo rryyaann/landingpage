@@ -1,26 +1,3 @@
-<%= link_to 'Back', pins_path %>
-
-<div class="row">
-  <div class="col-md-offset-2 col-md-8">
-    <div class="panel panel-default">
-      <div class="panel-heading center">
-        <%= image_tag @pin.image.url(:medium) %>
-      </div>
-      <div class="panel-body">
-        <p><%= @pin.description %></p>
-        <p><strong><%= @pin.user.name if @pin.user %></strong></p>
-
-        <% if @pin.user == current_user %>
-         <%= link_to 'Edit', edit_pin_path(@pin) %>
-        <% end %>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
 <div class="clouds jumbotron">
 	<div class="container">
 
@@ -50,15 +27,19 @@
 
 <div class="testimonial">
 	  <h3 class="centertext">Our User Loves Us:</h3>
-	  <h4 class="centertext text-muted">"Your app saves me so much money grocery shopping!"</h5>
+	  <h4 class="centertext text-muted">"<%= @pin.testimonialtop %>"</h5>
 	  <img class="oag img-circle"></img>
-	  <h4 class="centertext text-muted">"You won't let anyone else download it, will you?"
+	  <h4 class="centertext text-muted">"<%= @pin.testimonialbottom %>"
 	</br>
 </div>
 </br>
 
 <div class="bottomline">
   </br>
-	<h4 class="centertext">The Milk App by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming Soon</h4>
+	<h4 class="centertext"><%= @pin.company %> by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming Soon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <% if @pin.user == current_user %>
+         <%= link_to 'Edit', edit_pin_path(@pin) %>
+        <% end %></h4>
   </br>	
 </div>	
+
+
