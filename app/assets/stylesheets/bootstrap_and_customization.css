@@ -10,6 +10,8 @@ $brand-primary:                                    #ecf0f1;
 $jumbotron-bg:                                         white;
 
 
+
+
 .center {
      text-align: center;
 }
@@ -23,10 +25,41 @@ $jumbotron-bg:                                         white;
 	background-image: url(http://payload88.cargocollective.com/1/8/282864/4079530/mountain_900.jpg)
 }
 
-.whitebackground {
+.bottomline {
 	background-color: #ecf0f1;
+	margin: 0px;
+	padding: 0px;
+
 }
 
 .centertext {
 	text-align: center;
+}
+
+.clouds {
+background-image: url('clouds.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.oag {
+background-image: url('OverlyAttachedGirlfriend.png');
+background-size: 109%;
+height: 140px;
+width: 140px;
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.testimonial {
+	margin: 0px;
+	padding: 0px;
 }

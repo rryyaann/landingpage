@@ -1,22 +1,41 @@
 
+<div class="clouds jumbotron">
+	<div class="container">
 
-<h1>This app gonna be like</h1>
-<h1>Uber</h1>
-<h1><i>for</i></h1>
-<h1>Grocery. Fucking. Coupons.</h1>
+  <h1>This app gonna be like</h1>
+  <h1>Uber</h1>
+  <h1><i>for</i></h1>
+  <h1>Grocery. Fucking. Coupons.</h1>
   
   </br>
   </br>
 
-<% if user_signed_in? %>
-          <h3>Sweet, you are on the early app list. Hang tight!</h3>
+
+     <% if user_signed_in? %>
+          <h3>Sweet, you are on the early app list. So elite. Hang tight!</h3>
+      </br>
+          <%= link_to "Think you can do better? Make your own damn Landing Page", new_pin_path, class: "btn btn-primary btn-lg" %>
      <% else %>
        <p>
          <%= link_to "YOLO", new_user_registration_path, class: "btn btn-success btn-lg" %>
        </p>
-  <% end %>   
+  <% end %> 
+   </br>
+   </br>
+   </br>
+  </div> 
+</div>
+
+<div class="testimonial">
+	  <h3 class="centertext">Our User Loves Us:</h3>
+	  <h4 class="centertext text-muted">"Your app saves me so much money grocery shopping!"</h5>
+	  <img class="oag img-circle"></img>
+	  <h4 class="centertext text-muted">"You won't let anyone else download it, will you?"
+	</br>
+</div>
 </br>
-<div class="whitebackground">
+
+<div class="bottomline">
   </br>
 	<h4 class="centertext">The Milk App&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming Soon</h4>
   </br>	
