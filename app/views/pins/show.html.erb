@@ -28,7 +28,7 @@
 <div class="testimonial">
 	  <h3 class="centertext">Our User Loves Us:</h3>
 	  <h4 class="centertext text-muted">"<%= @pin.testimonialtop %>"</h5>
-	  <img class="oag img-circle"></img>
+	  <img class="<%= @pin.meme %> img-circle"></img>
 	  <h4 class="centertext text-muted">"<%= @pin.testimonialbottom %>"
 	</br>
 </div>
@@ -36,8 +36,8 @@
 
 <div class="bottomline">
   </br>
-	<h4 class="centertext"><%= @pin.company %> by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming Soon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <% if @pin.user == current_user %>
-         <%= link_to 'Edit', edit_pin_path(@pin) %>
+	<h4 class="centertext"><%= @pin.company %> by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming Soon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= link_to 'Back', root_path %> <% if @pin.user == current_user %>
+         <%= link_to '| Edit Your Landing Page', edit_pin_path(@pin) %>
         <% end %></h4>
   </br>	
 </div>	

@@ -9,4 +9,5 @@ class Pin < ActiveRecord::Base
      validates :testimonialtop, presence: true
      validates :testimonialbottom, presence: true
      validates :company, presence: true
+     validates :meme, presence: true
 end

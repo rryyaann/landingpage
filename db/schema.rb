@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104170328) do
+ActiveRecord::Schema.define(version: 20141105003143) do
 
   create_table "pins", force: true do |t|
     t.string   "description"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20141104170328) do
     t.string   "button"
     t.string   "testimonialtop"
     t.string   "testimonialbottom"
+    t.string   "meme"
   end
 
   add_index "pins", ["user_id"], name: "index_pins_on_user_id"

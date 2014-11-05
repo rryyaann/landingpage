@@ -29,12 +29,17 @@
      </div>
 
     <div class="form-group">
-       <%= f.label :testimonial_text_above_user_picture %>
+       <%= f.label :choose_your_meme_user %>
+       <%= f.select(:meme, options_for_select([['Actual Advice Mallard', 'actualadvicemallard'], ['Advice God', 'advicegod'], ['Annoying Facebook Girl', 'annoyingfacebookgirl'], ['Baby Godfather', 'babygodfather'], ['Bad Luck Brian', 'badluckbrian'], ['Business Cat', 'businesscat'], ['College Liberal', 'collegeliberal'], ['Condescending Wonka', 'condescendingwonka'], ['Confession Bear', 'confessionbear'], ['Conspiracy Keanu', 'conspiracykeanu'], ['Dating Site Murderer', 'datingsitemurderer'], ['Drunk Baby', 'drunkbaby'], ['First World Problems', 'firstworldproblems'], ['First World Problems Cat', 'firstworldproblemscat'], ['Forever Alone', 'foreveralone'], ['Good Guy Greg', 'goodguygreg'], ['Grandma Finds The Internet', 'grandmafindstheinternet'], ['Grumpy Cat', 'grumpycat'], ['High Expectations Asian Father', 'highexpectationsasianfather'], ['Hipster Barista', 'hipsterbarista'], ['Idiot Nerd Girl', 'idiotnerdgirl'], ['Lazy College Senior', 'lazycollegesenior'], ['Matrix Morpheus', 'matrixmorpheus'], ['Nineties Problems', 'ninetiesproblems'], ['Ordinary Muslim Man', 'ordinarymuslimman'], ['Overly Attached Girlfriend', 'oag'], ['Paranoid Parrot', 'paranoidparrot'], ['Philosoraptor', 'philosoraptor'], ['Pickup Line Scientist', 'pickuplinescientist'], ['Redditors Wife', 'redditorswife'], ['Ridiculously Photogenic Guy', 'ridiculouslyphotogenicguy'], ['Scumbag Alcohol', 'scumbagalcohol'], ['Scumbag Brain', 'scumbagbrain'], ['Scumbag Steve', 'scumbagsteve'], ['Sheltering Suburban Mom', 'shelteringsuburbanmom'], ['Skeptical Third World Kid', 'skepticalthirdworldkid'], ['Socially Awesome Awkward Penguin', 'sociallyawesomeawkwardpenguin'], ['Socially Awkward Penguin', 'sociallyawkwardpenguin'], ['Successful Black Man', 'successfulblackman'], ['Success Kid', 'successkid'], ['Sudden Clarity Clarence', 'suddenclarityclarence'], ['Tech Impaired Duck', 'techimpairedduck'], ['Unhelpful High School Teacher', 'unhelpfulhighschoolteacher']]), {}, {class: "form-control"}) %>
+      </div>   
+
+    <div class="form-group">
+       <%= f.label :testimonial_text_above_meme_user_picture %>
        <%= f.text_field :testimonialtop, class: "form-control", :autofocus => true %>
      </div>  
 
      <div class="form-group">
-       <%= f.label :testimonial_text_below_user_picture %>
+       <%= f.label :testimonial_text_below_meme_user_picture %>
        <%= f.text_field :testimonialbottom, class: "form-control", :autofocus => true %>
      </div>  
 
