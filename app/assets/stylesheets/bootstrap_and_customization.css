@@ -78,7 +78,7 @@ padding: 0px;
 }
 
 .mountainbridge {
-background-image: url('clouds.jpg');
+background-image: url('mountainbridge.jpg');
 background-size: 100%;
 background-repeat: no-repeat;
 height: auto;
@@ -101,8 +101,8 @@ margin: 0px;
 padding: 0px;
 }
 
-.flowerscloseup {
-background-image: url('flowerscloseup.jpg');
+.flowercloseup {
+background-image: url('flowercloseup.jpg');
 background-size: 100%;
 background-repeat: no-repeat;
 height: auto;
@@ -281,8 +281,236 @@ margin: 0px;
 padding: 0px;
 }
 
+.car {
+background-image: url('car.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.freeway {
+background-image: url('freeway.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.losangeles {
+background-image: url('losangeles.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.canyon {
+background-image: url('canyon.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
 .abstract {
 background-image: url('abstract.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.nyc {
+background-image: url('nyc.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.readingroom {
+background-image: url('readingroom.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.ballpark {
+background-image: url('ballpark.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.collegecampus {
+background-image: url('collegecampus.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.dinner {
+background-image: url('dinner.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.rain {
+background-image: url('rain.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.statue {
+background-image: url('statue.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.louvre {
+background-image: url('louvre.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.pedestrian {
+background-image: url('pedestrian.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.guitar {
+background-image: url('guitar.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.library {
+background-image: url('library.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.puppy {
+background-image: url('puppy.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.cat {
+background-image: url('cat.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.bartender {
+background-image: url('bartender.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.coffee {
+background-image: url('coffee.jpg');
 background-size: 100%;
 background-repeat: no-repeat;
 height: auto;
