@@ -9,10 +9,10 @@
  <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
-      <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
         <p><%= pin.description %> for Grocery. Fucking. Coupons.</p>
         <strong><p>Submitted by: <%= pin.user.name if pin.user %></p></strong>
+        <%= link_to 'View Landing Page', pin_path(pin) %>
         <% if pin.user == current_user %>
           <div class="actions">
             <%= link_to 'Edit', edit_pin_path(pin) %>

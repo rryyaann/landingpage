@@ -1,10 +1,10 @@
-<div class="clouds jumbotron">
+<div class="<%= @pin.background %> jumbotron">
 	<div class="container">
-
+  
   <h1>This app gonna be like</h1>
   <h1><%= @pin.description %></h1>
   <h1><i>for</i></h1>
-  <h1>Grocery. Fucking. Coupons.</h1>
+  <h1><%= @pin.market %></h1>
   
   </br>
   </br>
@@ -45,13 +45,13 @@
         <div class="col-lg-4">
           <img class="questionPlaceholder roundedrec"></img>
           <h2>????</h2>
-          <p>?</p>
+          <p><%= @pin.question %></p>
           
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="barsPlaceholder roundedrec"></img>
           <h2>Profit</h2>
-          <p>It turns out we can save you boatloads of Zimbabwean dollars at the Grocery Store. Maybe you will spare us a suitcase of your loot? If not, ads. ads. ads.</p>
+          <p><%= @pin.profit %></p>
         </div><!-- /.col-lg-4 -->
       </div>
     </br>
@@ -63,7 +63,7 @@
 <div img class="iphone"></img>
   <div class="text-box">
     <div class="text"> PUSH FOR  </div>
-    <div class="text-2">GROCERY. FUCKING. COUPONS.</div>
+    <div class="text-2"><%= @pin.button %></div>
   </div>
   </div>
 </div>      
