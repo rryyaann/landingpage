@@ -32,6 +32,10 @@ $jumbotron-bg:                                         white;
 
 }
 
+.navbar {
+	margin-bottom: 0px;
+}
+
 .centertext {
 	text-align: center;
 }
