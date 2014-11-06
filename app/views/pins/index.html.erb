@@ -10,7 +10,7 @@
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
       <div class="panel-body">
-        <p><%= pin.description %> for Grocery. Fucking. Coupons.</p>
+        <p><%= pin.description %> for <%= pin.market %></p>
         <strong><p>Submitted by: <%= pin.user.name if pin.user %></p></strong>
         <%= link_to 'View Landing Page', pin_path(pin) %>
         <% if pin.user == current_user %>
