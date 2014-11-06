@@ -48,6 +48,82 @@ margin: 0px;
 padding: 0px;
 }
 
+.hilight {
+background-color: yellow;
+}
+
+.iphone {
+background-image: url('iphone.png');
+background-size: 100%;
+background-repeat: no-repeat;
+height: 420px;
+width: 300px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 25px 25px 0px 0px;
+display:table;
+}
+
+.iphone .text-box {
+	margin-top:20px;
+	display:table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding:60px;
+}
+
+.iphone .text {
+	margin-top:170px;
+}
+
+.iphone .text-2 {
+}
+
+.mountainPlaceholder {
+background-image: url('mountainPlaceholder.png');
+background-size: 100%;
+background-repeat: no-repeat;
+height: 30px;
+width: 40px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.questionPlaceholder {
+background-image: url('questionPlaceholder.png');
+background-size: 100%;
+background-repeat: no-repeat;
+height: 40px;
+width: 40px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.barsPlaceholder {
+background-image: url('barsPlaceholder.png');
+background-size: 100%;
+background-repeat: no-repeat;
+height: 30px;
+width: 40px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.blueback {
+	background-color: #2980b9;
+}
+
+.roundedrec {
+	border-radius: 5px;
+}
+
+.cloudtext {
+	color: #ecf0f1;
+}
+
 .oag {
 background-image: url('OverlyAttachedGirlfriend.png');
 background-size: 109%;
