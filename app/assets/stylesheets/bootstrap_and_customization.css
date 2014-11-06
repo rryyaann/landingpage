@@ -33,6 +33,10 @@ $jumbotron-bg:                                         white;
 
 }
 
+.greentext {
+	color: #27ae60;
+}
+
 .navbar {
 	margin-bottom: 0px;
 }
