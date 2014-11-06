@@ -13,18 +13,20 @@
     </div>
   <% end %>
 
+  <h3 class="centertext">Don't worry, you can edit your landing page after you submit</h3>
+
   <div class="form-group">
        <%= f.label :choose_your_epic_background_photo %>
        <%= f.select(:background, options_for_select([['clouds', 'clouds'], ['river', 'river'], ['water and rocks', 'waterandrocks'], ['old man', 'oldman'], ['mountain bridge', 'mountainbridge'], ['hollywood', 'hollywood'], ['flowers close up', 'flowerscloseup'], ['sea', 'sea'], ['water bridge', 'waterbridge'], ['plane in clouds', 'planeinclouds'], ['birds eye view', 'birdseyeview'], ['storm clouds', 'stormclouds'], ['horn', 'horn'], ['person in water', 'personinwater'], ['rocks', 'rocks'], ['forest', 'forest'], ['islands', 'islands'], ['flowers', 'flowers'], ['shop window', 'shopwindow'], ['wood', 'wood'], ['twilight', 'twilight'], ['abstract', 'abstract'], ['structure', 'structure'], ['truck', 'truck']]), {}, {class: "form-control"}) %>
       </div>  
 
   <div class="form-group">
-    <%= f.label :word_or_phrase_that_will_go_before_for %>
+    <%= f.label :word_or_phrase_that_will_replace_uber %>
     <%= f.text_field :description, class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= f.label :word_or_phrase_that_will_go_after_the_word_for %>
+    <%= f.label :word_or_phrase_that_will_replace_grocery_fucking_coupons %>
     <%= f.text_field :market, class: "form-control" %>
   </div>
 
@@ -44,7 +46,7 @@
      </div>  
 
      <div class="form-group">
-    <%= f.label :text_under_question_mark_icon %>
+    <%= f.label :text_under_step_1 %>
     <%= f.text_field :question, class: "form-control" %>
   </div>
 
