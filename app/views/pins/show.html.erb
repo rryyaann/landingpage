@@ -94,13 +94,18 @@
 <div class="bottomline">
   </br>
   <div class="container">
-	<h4><%= @pin.company %> by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming Soon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= link_to 'Back', root_path %> <% if @pin.user == current_user %>
-         <%= link_to '| Edit Your Landing Page', edit_pin_path(@pin) %>
+	<h5 class="centertext"><%= @pin.company %> by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;2014&nbsp;&nbsp;Coming Real Soon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= link_to "Upvote", like_pin_path(@pin), method: :put %> &nbsp;&nbsp;&nbsp;&nbsp; 
+  <%= link_to "Downvote", dislike_pin_path(@pin), method: :put %>&nbsp;&nbsp;&nbsp;&nbsp; Total Votes:
+  <%= @pin.score %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <%= link_to 'Back', root_path %> 
+     <% if @pin.user == current_user %>
+         <%= link_to '| Edit Landing Page', edit_pin_path(@pin) %>
         <% end %> 
       <%= link_to new_pin_path do %>
-               | Create Another Landing Page
+               | Make Landing Page
             <% end %>
-      </h4>
+      </h5> 
     </div>
   </br>	
 </div>	

@@ -7,10 +7,15 @@
  <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
-      <div class="panel-body">
-        <p><%= pin.description %> for <%= pin.market %></p>
+      <div class="panel-body centertext">
+        <p>
+        <%= link_to pin.description + ' for ' + pin.market, pin_path(pin) %>
+      </p>
+      
         <strong><p>Submitted by: <%= pin.user.name if pin.user %></p></strong>
-        <%= link_to 'View Landing Page', pin_path(pin) %>
+        <%= link_to "Upvote", like_pin_path(pin), method: :put %>  
+            <%= link_to "Downvote", dislike_pin_path(pin), method: :put %></p><p> Total Votes:
+            <%= pin.score %> </p>
         <% if pin.user == current_user %>
           <div class="actions">
             <%= link_to 'Edit', edit_pin_path(pin) %>
