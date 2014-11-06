@@ -16,6 +16,7 @@ $jumbotron-bg:                                         white;
      text-align: center;
 }
 
+
 .navbar-brand {
      font-weight: bold;
      color: #ecf0f1 !important;
@@ -317,7 +318,7 @@ padding: 0px;
 }
 
 .hilight {
-background-color: yellow;
+background-color: #2ecc71;
 }
 
 .iphone {
@@ -880,6 +881,18 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 }
+
+<style type="text/css">
+ 
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+ 
+</style>
 
 
 
