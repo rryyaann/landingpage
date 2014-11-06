@@ -14,7 +14,7 @@
       
         <strong><p>Submitted by: <%= pin.user.name if pin.user %></p></strong>
         <%= link_to "Upvote", like_pin_path(pin), method: :put %>  
-            <%= link_to "Downvote", dislike_pin_path(pin), method: :put %></p><p> Total Votes:
+            <%= link_to "Downvote", dislike_pin_path(pin), method: :put %></p><p> Score:
             <%= pin.score %> </p>
         <% if pin.user == current_user %>
           <div class="actions">

@@ -96,7 +96,7 @@
   <div class="container">
 	<h5 class="centertext"><%= @pin.company %> by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;2014&nbsp;&nbsp;Coming Real Soon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <%= link_to "Upvote", like_pin_path(@pin), method: :put %> &nbsp;&nbsp;&nbsp;&nbsp; 
-  <%= link_to "Downvote", dislike_pin_path(@pin), method: :put %>&nbsp;&nbsp;&nbsp;&nbsp; Total Votes:
+  <%= link_to "Downvote", dislike_pin_path(@pin), method: :put %>&nbsp;&nbsp;&nbsp;&nbsp; Score:
   <%= @pin.score %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <%= link_to 'Back', root_path %> 
      <% if @pin.user == current_user %>
