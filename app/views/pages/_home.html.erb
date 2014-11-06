@@ -21,6 +21,7 @@
       </br>
       <% if user_signed_in? %>
           <%= link_to "Think you can do better? Make your own damn App Landing Page", new_pin_path, class: "btn btn-primary btn-lg" %>
+        </br>
      <% else %>
        <p>
          <%= link_to "YOLO", new_user_registration_path, class: "btn btn-success btn-lg" %>
