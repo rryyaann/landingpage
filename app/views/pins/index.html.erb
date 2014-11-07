@@ -11,7 +11,7 @@
     <div class="box panel panel-default">
       <div class="panel-body centertext">
         <p>
-        <strong><%= link_to pin.description + ' for...', pin_path(pin) %></strong>
+        <strong><%= link_to pin.description + ' for ' + pin.market, pin_path(pin) %></strong>
       </p>
         <p> Total Money Invested: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.get_upvotes.size * 25000 %><% end %> </p>
         <p> # of Investors: <%= pin.get_upvotes.size %></p> 
