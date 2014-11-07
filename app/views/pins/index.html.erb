@@ -11,8 +11,10 @@
         <p>
         <strong><%= link_to pin.description + ' for...', pin_path(pin) %></strong>
       </p>
-        <p> # of Investors: <%= pin.score %></p> 
-        <p> Money Invested: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.score * 50000 %><% end %> </p>
+        <p> # of Investors: <%= pin.get_upvotes.size %></p> 
+        
+        <p> Total Money Invested: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.get_upvotes.size * 50000 %><% end %> </p>
+        <p> # of Hater VCs: <%= pin.get_downvotes.size %></p> 
         <%= link_to "Invest", like_pin_path(pin), method: :put %> |   
             <%= link_to "Reject", dislike_pin_path(pin), method: :put %></p>
             <p>Founder: <%= pin.user.name if pin.user %></p>
