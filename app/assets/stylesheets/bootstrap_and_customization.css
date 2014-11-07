@@ -527,6 +527,18 @@ margin: 0px;
 padding: 0px;
 }
 
+.obama {
+background-image: url('https://s3.amazonaws.com/landingpage1/obama.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
 .coffee {
 background-image: url('coffee.jpg');
 background-size: 100%;
