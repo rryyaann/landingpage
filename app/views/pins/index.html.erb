@@ -9,13 +9,12 @@
     <div class="box panel panel-default">
       <div class="panel-body centertext">
         <p>
-        <%= link_to pin.description + ' for ' + pin.market, pin_path(pin) %>
+        <%= link_to pin.description + ' for...', pin_path(pin) %>
       </p>
-      
-        <strong><p>Submitted by: <%= pin.user.name if pin.user %></p></strong>
+        <p> Score: <%= pin.score %> </p>
         <%= link_to "Upvote", like_pin_path(pin), method: :put %>  
-            <%= link_to "Downvote", dislike_pin_path(pin), method: :put %></p><p> Score:
-            <%= pin.score %> </p>
+            <%= link_to "Downvote", dislike_pin_path(pin), method: :put %></p>
+            <strong><p>Submitted by: <%= pin.user.name if pin.user %></p></strong>
         <% if pin.user == current_user %>
           <div class="actions">
             <%= link_to 'Edit', edit_pin_path(pin) %>
