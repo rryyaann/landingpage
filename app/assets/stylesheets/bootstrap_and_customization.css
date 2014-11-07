@@ -94,7 +94,7 @@ padding: 0px;
 }
 
 .hollywood {
-background-image: url('hollywood.jpg');
+background-image: url('http://s3.amazonaws.com/bucketname/hollywood.jpg');
 background-size: 100%;
 background-repeat: no-repeat;
 height: auto;
