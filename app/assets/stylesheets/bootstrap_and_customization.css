@@ -63,8 +63,8 @@ background-size: 100%;
 background-repeat: no-repeat;
 height: 1000px;
 width: 500px;
-padding-top: 100px;
-margin-top: 100px;
+padding-top: 40px;
+margin-top: 40px;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
@@ -1136,7 +1136,16 @@ border: 0;
 box-shadow: 0;
 display: inline;
 }
- 
+
+.text-box {
+	color: #537EED;
+	font-weight:800;
+	cursor:pointer;
+}
+
+.text-box:hover {
+	color:#93AFF9;
+}
 
 
 
