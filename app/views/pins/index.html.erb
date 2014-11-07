@@ -2,19 +2,20 @@
 <%= render 'pages/home' %>
 <div class="container">
 </br>
-<h2 class="centertext">Check out user created app landing pages</h2>
+<h2 class="centertext">Check out and invest in user created app landing pages</h2>
 
  <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
       <div class="panel-body centertext">
         <p>
-        <%= link_to pin.description + ' for...', pin_path(pin) %>
+        <strong><%= link_to pin.description + ' for...', pin_path(pin) %></strong>
       </p>
-        <p> Score: <%= pin.score %> </p>
-        <%= link_to "Upvote", like_pin_path(pin), method: :put %>  
-            <%= link_to "Downvote", dislike_pin_path(pin), method: :put %></p>
-            <strong><p>Submitted by: <%= pin.user.name if pin.user %></p></strong>
+        <p> # of Investors: <%= pin.score %></p> 
+        <p> Money Invested: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.score * 50000 %><% end %> </p>
+        <%= link_to "Invest", like_pin_path(pin), method: :put %> |   
+            <%= link_to "Reject", dislike_pin_path(pin), method: :put %></p>
+            <p>Founder: <%= pin.user.name if pin.user %></p>
         <% if pin.user == current_user %>
           <div class="actions">
             <%= link_to 'Edit', edit_pin_path(pin) %>
