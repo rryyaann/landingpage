@@ -94,7 +94,7 @@ padding: 0px;
 }
 
 .hollywood {
-background-image: url('hollyood.jpg');
+background-image: url('https://s3.amazonaws.com/landingpage1/hollywood.jpg');
 background-size: 100%;
 background-repeat: no-repeat;
 height: auto;
