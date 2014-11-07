@@ -94,18 +94,22 @@
 <div class="bottomline">
   </br>
   <div class="container">
-	<h5 class="centertext"><%= @pin.company %> by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;2014&nbsp;&nbsp;Coming Real Soon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <%= link_to "Upvote", like_pin_path(@pin), method: :put %> &nbsp;&nbsp;&nbsp;&nbsp; 
-  <%= link_to "Downvote", dislike_pin_path(@pin), method: :put %>&nbsp;&nbsp;&nbsp;&nbsp; Score:
-  <%= @pin.score %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <%= link_to 'Back', root_path %> 
+	<h4 class="centertext"><%= @pin.company %> by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;2014&nbsp;&nbsp;Coming Real Soon</h4>
+</br>
+  <h5 class="centertext"> <%= link_to "Invest", like_pin_path(@pin), method: :put %> | 
+  <%= link_to "Reject", dislike_pin_path(@pin), method: :put %> </h5>
+  <h6 class="centertext"><strong>Startup Stats:</strong> Total $ Invested: $<% if @pin.score < 1 %><%= 0 %><% else %><%= @pin.get_upvotes.size * 50000 %><% end %>  | # of Investors: <%= @pin.get_upvotes.size %> | # of Hater VCs: <%= @pin.get_downvotes.size %></h6> 
+</br>
+    <h5 class="centertext"><%= link_to 'Back', root_path %> 
      <% if @pin.user == current_user %>
-         <%= link_to '| Edit Landing Page', edit_pin_path(@pin) %>
+         <%= link_to '| Edit Your Landing Page', edit_pin_path(@pin) %>
         <% end %> 
       <%= link_to new_pin_path do %>
-               | Make Landing Page
+               | Make New Page
             <% end %>
+          </br>
       </h5> 
+    </br>
     </div>
   </br>	
 </div>	
