@@ -1,5 +1,44 @@
+<nav class="navbar  navbar-default" role="navigation">
+  <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="navbar-brand">
+      <%= link_to "Uber for Grocery. Fucking. Coupons.", root_path %></li>
+    </div>  
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to new_pin_path do %>
+              <span class="glyphicon glyphicon-plus"></span> Create a Better Landing Page
+            <% end %>
+          </li>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to "Account Settings", edit_user_registration_path %></li>
+        <% else %>
+          <li>
+            <%= link_to new_pin_path do %>
+              <span class="glyphicon glyphicon-plus"></span> Create a Better Landing Page
+            <% end %>
+          </li>
+          <li><%= link_to "Sign in", new_user_session_path %></li>
+        <% end %>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</div>
+</nav>
+
 <div class="container">
-  <h1>Help us out and Make a Better Landing Page</h1>
+  <h1 class="centertext">Make Your Own Landing Page</h1>
 
   <%= render 'form' %>
 

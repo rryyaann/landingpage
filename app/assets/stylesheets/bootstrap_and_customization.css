@@ -41,6 +41,12 @@ $jumbotron-bg:                                         white;
 	margin-bottom: 0px;
 }
 
+.center {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .centering {
 	width: 300px;
 	margin-left: auto;
@@ -49,6 +55,20 @@ $jumbotron-bg:                                         white;
 
 .centertext {
 	text-align: center;
+}
+
+.guide {
+background-image: url('guide.png');
+background-size: 100%;
+background-repeat: no-repeat;
+height: 1000px;
+width: 500px;
+padding-top: 100px;
+margin-top: 100px
+color: #ecf0f1;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
 }
 
 .clouds {
@@ -111,20 +131,9 @@ margin: 0px;
 padding: 0px;
 }
 
+
 .flowercloseup {
 background-image: url('flowercloseup.jpg');
-background-size: 100%;
-background-repeat: no-repeat;
-height: auto;
-padding-top: 0px;
-color: #ecf0f1;
-text-align: center;
-margin: 0px;
-padding: 0px;
-}
-
-.sea {
-background-image: url('sea.jpg');
 background-size: 100%;
 background-repeat: no-repeat;
 height: auto;
