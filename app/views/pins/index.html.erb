@@ -13,7 +13,7 @@
         <p>
         <strong><%= link_to pin.description + ' for...', pin_path(pin) %></strong>
       </p>
-        <p> Total Money Invested: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.get_upvotes.size * 50000 %><% end %> </p>
+        <p> Total Money Invested: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.get_upvotes.size * 25000 %><% end %> </p>
         <p> # of Investors: <%= pin.get_upvotes.size %></p> 
         <p> # of Hater VCs: <%= pin.get_downvotes.size %></p> 
         <p>Founder: <%= pin.user.name if pin.user %></p>

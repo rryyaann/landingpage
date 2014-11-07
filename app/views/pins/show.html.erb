@@ -1,3 +1,41 @@
+<nav class="navbar  navbar-default" role="navigation">
+  <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="navbar-brand">
+      <%= link_to  @pin.company, root_path %>
+    </div>  
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to new_pin_path do %>
+              <span class="glyphicon glyphicon-plus"></span> Create a Better Landing Page
+            <% end %>
+          </li>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to "Account Settings", edit_user_registration_path %></li>
+        <% else %>
+          <li>
+            <%= link_to new_pin_path do %>
+              <span class="glyphicon glyphicon-plus"></span> Create a Better Landing Page
+            <% end %>
+          </li>
+          <li><%= link_to "Sign in", new_user_session_path %></li>
+        <% end %>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</div>
+</nav>
 
 
 <div class="<%= @pin.background %> jumbotron">
@@ -94,11 +132,11 @@
 <div class="bottomline">
   </br>
   <div class="container">
-	<h4 class="centertext"><%= @pin.company %> by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;2014&nbsp;&nbsp;Coming Real Soon</h4>
+	<h4 class="centertext"><%= @pin.company %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Founded by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming Real Soon</h4>
 </br>
-  <h5 class="centertext"> <%= link_to "Invest", like_pin_path(@pin), method: :put %> | 
-  <%= link_to "Reject", dislike_pin_path(@pin), method: :put %> </h5>
-  <h6 class="centertext"><strong>Startup Stats:</strong> Total $ Invested: $<% if @pin.score < 1 %><%= 0 %><% else %><%= @pin.get_upvotes.size * 50000 %><% end %>  | # of Investors: <%= @pin.get_upvotes.size %> | # of Hater VCs: <%= @pin.get_downvotes.size %></h6> 
+  <h4 class="centertext"> <%= link_to "Invest", like_pin_path(@pin), method: :put %> | 
+  <%= link_to "Reject", dislike_pin_path(@pin), method: :put %> </h4>
+  <h6 class="centertext"><strong>Startup Stats:</strong> Total $ Invested: $<% if @pin.score < 1 %><%= 0 %><% else %><%= @pin.get_upvotes.size * 25000 %><% end %>  | # of Investors: <%= @pin.get_upvotes.size %> | # of Hater VCs: <%= @pin.get_downvotes.size %></h6> 
 </br>
     <h5 class="centertext"><%= link_to 'Back', root_path %> 
      <% if @pin.user == current_user %>
