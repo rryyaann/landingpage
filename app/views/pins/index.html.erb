@@ -25,7 +25,7 @@
           <% else pin.get_upvotes.size >= 150 %><%= 'IPO' %><% end %>
          </p> 
 
-         <p>Yearly Revenue Run Rate:</p>
+         <p>Yearly Profit Run Rate:</p>
          <p> $<% if pin.get_upvotes.size < 2 %><%= (pin.get_upvotes.size - pin.get_downvotes.size) * 115 %>
           <% elsif pin.get_upvotes.size < 8 %><%= (pin.get_upvotes.size - pin.get_downvotes.size) * 1125 %>
           <% elsif pin.get_upvotes.size < 31 %><%= (pin.get_upvotes.size - pin.get_downvotes.size) * 115000 %>
