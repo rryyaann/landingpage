@@ -135,11 +135,11 @@
 <div class="bottomline">
   </br>
   <div class="container">
-	<h4 class="centertext"><%= @pin.company %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Founded by <%= @pin.user.name if @pin.user %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming Real Soon</h4>
+	<h4 class="centertext"><%= @pin.company %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Founded by <%= @pin.user.name if @pin.user %></h4>
 </br>
   <h4 class="centertext"> <%= link_to "Invest", like_pin_path(@pin), method: :put %> | 
   <%= link_to "Reject", dislike_pin_path(@pin), method: :put %> </h4>
-  <h6 class="centertext"><strong>Startup Stats:</strong> Total $ Invested: $<% if @pin.score < 1 %><%= 0 %><% else %><%= @pin.get_upvotes.size * 25000 %><% end %>  | # of Investors: <%= @pin.get_upvotes.size %> | # of Hater VCs: <%= @pin.get_downvotes.size %></h6> 
+  <h6 class="centertext"><strong>Startup Stats:</strong> Total $ Invested: $<% if @pin.score < 1 %><%= 0 %><% else %><%= @pin.get_upvotes.size * 250000 %><% end %>  | # of Investors: <%= @pin.get_upvotes.size %> | # of Hater VCs: <%= @pin.get_downvotes.size %></h6> 
 </br>
     <h5 class="centertext"><%= link_to 'Back', root_path %> 
      <% if @pin.user == current_user %>
