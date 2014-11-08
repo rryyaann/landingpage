@@ -26,12 +26,12 @@
          </p> 
 
          <p>Yearly Profit Run Rate:</p>
-         <p> $<% if pin.get_upvotes.size < 2 %><%= (pin.get_upvotes.size - pin.get_downvotes.size) * 115 %>
-          <% elsif pin.get_upvotes.size < 8 %><%= (pin.get_upvotes.size - pin.get_downvotes.size) * 1125 %>
-          <% elsif pin.get_upvotes.size < 31 %><%= (pin.get_upvotes.size - pin.get_downvotes.size) * 115000 %>
-          <% elsif pin.get_upvotes.size < 59 %><%= (pin.get_upvotes.size - pin.get_downvotes.size) * 715000 %>
-          <% elsif pin.get_upvotes.size < 99 %><%= (pin.get_upvotes.size - pin.get_downvotes.size) * 1515000 %>
-          <% else pin.get_upvotes.size >= 99 %><%= (pin.get_upvotes.size - pin.get_downvotes.size) * 10115000 %><% end %></p>
+         <p> $<% if pin.get_upvotes.size < 2 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 115 %>
+          <% elsif pin.get_upvotes.size < 8 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 1125 %>
+          <% elsif pin.get_upvotes.size < 31 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 115000 %>
+          <% elsif pin.get_upvotes.size < 59 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 715000 %>
+          <% elsif pin.get_upvotes.size < 99 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 1515000 %>
+          <% else pin.get_upvotes.size >= 99 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 10115000 %><% end %></p>
 
 
         <p>Founder: <%= pin.user.name if pin.user %></p>
