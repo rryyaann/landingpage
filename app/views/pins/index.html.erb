@@ -4,7 +4,7 @@
 </br>
 <h2 class="centertext">Check out and invest in user created app landing pages</h2>
 </br>
-<div class="centering"><%= link_to "Make your own Landing Page", new_pin_path, class: "btn btn-success btn-sm centering centertext" %></div>
+<div class="centering"><%= link_to "Make your own Landing Page in 60 seconds", new_pin_path, class: "btn btn-success btn-sm centering centertext" %></div>
 </br>
  <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
@@ -13,7 +13,8 @@
         <p>
         <strong><%= link_to pin.description + ' for ' + pin.market, pin_path(pin) %></strong>
       </p>
-        <p> Total Money Invested: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.get_upvotes.size * 250000 %><% end %> </p>
+
+        <p> Investment $ Received: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.get_upvotes.size * 250000 %><% end %> </p>
         <p> # of Investors: <%= pin.get_upvotes.size %></p> 
         <p> # of Hater VCs: <%= pin.get_downvotes.size %></p> 
         
@@ -37,11 +38,31 @@
         <p>Founder: <%= pin.user.name if pin.user %></p>
         <%= link_to "Invest", like_pin_path(pin), method: :put %> |   
         <%= link_to "Reject", dislike_pin_path(pin), method: :put %>
+
+
         <% if pin.user == current_user %>
           <div class="actions">
-            <%= link_to 'Edit', edit_pin_path(pin) %>
-            <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to 'Edit', edit_pin_path(pin) %> |
+             <%= link_to ' Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
+        </br>
+
+             <div id="share-buttons">
+
+<!-- Reddit -->
+<a href="http://reddit.com/submit?url=http://www.simplesharebuttons.com&title=Simple Share Buttons" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>    
+ 
+<!-- Facebook -->
+<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+ 
+<!-- Twitter -->
+<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+ 
+<!-- Email -->
+<a href="mailto:?Subject=Simple Share Buttons&Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://www.simplesharebuttons.com"><img src="http://www.simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a>
+ 
+</div>
+
         <% end %>
       </div>
     </div>
