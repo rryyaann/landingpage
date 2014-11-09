@@ -37,6 +37,10 @@ $jumbotron-bg:                                         white;
 	color: #27ae60;
 }
 
+.litegreentext {
+	color: #2ecc71;
+}
+
 .navbar {
 	margin-bottom: 0px;
 }
@@ -84,6 +88,90 @@ padding: 0px;
 
 .river {
 background-image: url('https://s3.amazonaws.com/landingpage1/river.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.road {
+background-image: url('https://s3.amazonaws.com/landingpage1/road.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.oldmap {
+background-image: url('https://s3.amazonaws.com/landingpage1/oldmap.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.penguins {
+background-image: url('https://s3.amazonaws.com/landingpage1/penguins.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.police {
+background-image: url('https://s3.amazonaws.com/landingpage1/police.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.grandcentral {
+background-image: url('https://s3.amazonaws.com/landingpage1/grandcentral.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.degaspainting {
+background-image: url('https://s3.amazonaws.com/landingpage1/degaspainting.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+height: auto;
+padding-top: 0px;
+color: #ecf0f1;
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.walking {
+background-image: url('https://s3.amazonaws.com/landingpage1/walking.jpg');
 background-size: 100%;
 background-repeat: no-repeat;
 height: auto;

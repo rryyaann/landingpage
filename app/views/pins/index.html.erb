@@ -15,7 +15,7 @@
       </h4>
 
         <p> Investment $ Received: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.get_upvotes.size * 250000 %><% end %> </p>
-        <p> # of Investors: <%= pin.get_upvotes.size %> | # of Hater VCs: <%= pin.get_downvotes.size %></p> 
+        <p> # of Investors: <%= pin.get_upvotes.size %>  # of Hater VCs: <%= pin.get_downvotes.size %></p> 
         
         <p>Stage: <% if pin.get_upvotes.size < 2 %> <%= 'Friends & Family' %>
           <% elsif pin.get_upvotes.size < 8 %><%= 'Seed' %>
@@ -25,8 +25,8 @@
           <% else pin.get_upvotes.size >= 150 %><%= 'IPO' %><% end %>
          </p> 
 
-         <p>Yearly Profit Run Rate:
-         $<% if pin.get_upvotes.size < 2 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 115 %>
+         <p>Yearly Profit Run Rate:</p>
+         <p> $<% if pin.get_upvotes.size < 2 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 115 %>
           <% elsif pin.get_upvotes.size < 8 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 1125 %>
           <% elsif pin.get_upvotes.size < 31 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 115000 %>
           <% elsif pin.get_upvotes.size < 59 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 715000 %>
@@ -50,7 +50,7 @@
       <div id="share-buttonsindex">
 
 <!-- Reddit -->
-<a href="http://reddit.com/submit?url=http://www.simplesharebuttons.com&title=Simple Share Buttons" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>    
+<a href="http://reddit.com/submit?url=http://www.simplesharebuttons.com&title=Best Landing Page Ever" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>    
  
 <!-- Facebook -->
 <a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
