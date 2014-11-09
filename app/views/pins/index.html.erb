@@ -10,15 +10,15 @@
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
       <div class="panel-body centertext">
-        <p>
+        <h4
         <strong><%= link_to pin.description + ' for ' + pin.market, pin_path(pin) %></strong>
-      </p>
+      </h4>
 
         <p> Investment $ Received: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.get_upvotes.size * 250000 %><% end %> </p>
         <p> # of Investors: <%= pin.get_upvotes.size %></p> 
         <p> # of Hater VCs: <%= pin.get_downvotes.size %></p> 
         
-        <p>Startup Stage: <% if pin.get_upvotes.size < 2 %> <%= 'Friends & Family' %>
+        <p>Stage: <% if pin.get_upvotes.size < 2 %> <%= 'Friends & Family' %>
           <% elsif pin.get_upvotes.size < 8 %><%= 'Seed' %>
           <% elsif pin.get_upvotes.size < 31  %><%= 'Series A' %>
           <% elsif pin.get_upvotes.size < 59  %><%= 'Series B' %>
@@ -36,8 +36,8 @@
 
 
         <p>Founder: <%= pin.user.name if pin.user %></p>
-        <%= link_to "Invest", like_pin_path(pin), method: :put %> |   
-        <%= link_to "Reject", dislike_pin_path(pin), method: :put %>
+        <h4><strong><%= link_to "Invest", like_pin_path(pin), method: :put %> |   
+        <%= link_to "Reject", dislike_pin_path(pin), method: :put %></strong></h4>
 
 
         <% if pin.user == current_user %>
@@ -45,9 +45,10 @@
             <%= link_to 'Edit', edit_pin_path(pin) %> |
              <%= link_to ' Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
-        </br>
+        <% end %>
+      </br>
 
-             <div id="share-buttons">
+      <div id="share-buttons">
 
 <!-- Reddit -->
 <a href="http://reddit.com/submit?url=http://www.simplesharebuttons.com&title=Simple Share Buttons" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>    
@@ -63,7 +64,7 @@
  
 </div>
 
-        <% end %>
+
       </div>
     </div>
   <% end %>
