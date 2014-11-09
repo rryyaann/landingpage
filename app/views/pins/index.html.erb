@@ -10,13 +10,12 @@
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
       <div class="panel-body centertext">
-        <h4
+        <h4>
         <strong><%= link_to pin.description + ' for ' + pin.market, pin_path(pin) %></strong>
       </h4>
 
         <p> Investment $ Received: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.get_upvotes.size * 250000 %><% end %> </p>
-        <p> # of Investors: <%= pin.get_upvotes.size %></p> 
-        <p> # of Hater VCs: <%= pin.get_downvotes.size %></p> 
+        <p> # of Investors: <%= pin.get_upvotes.size %> | # of Hater VCs: <%= pin.get_downvotes.size %></p> 
         
         <p>Stage: <% if pin.get_upvotes.size < 2 %> <%= 'Friends & Family' %>
           <% elsif pin.get_upvotes.size < 8 %><%= 'Seed' %>
@@ -26,8 +25,8 @@
           <% else pin.get_upvotes.size >= 150 %><%= 'IPO' %><% end %>
          </p> 
 
-         <p>Yearly Profit Run Rate:</p>
-         <p> $<% if pin.get_upvotes.size < 2 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 115 %>
+         <p>Yearly Profit Run Rate:
+         $<% if pin.get_upvotes.size < 2 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 115 %>
           <% elsif pin.get_upvotes.size < 8 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 1125 %>
           <% elsif pin.get_upvotes.size < 31 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 115000 %>
           <% elsif pin.get_upvotes.size < 59 %><%= (pin.get_upvotes.size - (pin.get_downvotes.size * 2)) * 715000 %>
@@ -58,6 +57,7 @@
  
 <!-- Twitter -->
 <a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+ 
  
 </div>
 
