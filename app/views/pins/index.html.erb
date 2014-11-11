@@ -15,7 +15,7 @@
       </h4>
 
         <p> Investment $ Received: $<% if pin.score < 1 %><%= 0 %><% else %><%= pin.get_upvotes.size * 250000 %><% end %> </p>
-        <p> # of Investors: <%= pin.get_upvotes.size %>  # of Hater VCs: <%= pin.get_downvotes.size %></p> 
+        <p> # of Investors: <%= pin.get_upvotes.size %> | # of Hater VCs: <%= pin.get_downvotes.size %></p> 
         
         <p>Stage: <% if pin.get_upvotes.size < 2 %> <%= 'Friends & Family' %>
           <% elsif pin.get_upvotes.size < 8 %><%= 'Seed' %>
@@ -46,18 +46,16 @@
           </div>
         <% end %>
       </br>
-
-      <div id="share-buttonsindex">
+<div id="share-buttons">
 
 <!-- Reddit -->
-<a href="http://reddit.com/submit?url=http://www.simplesharebuttons.com&title=Best Landing Page Ever" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>    
+<a href="http://reddit.com/submit?url=http://www.thisappisbetterthanyours.com&title=" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>    
  
 <!-- Facebook -->
-<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+<a href="http://www.facebook.com/sharer.php?u=http://www.thisappisbetterthanyours.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
  
 <!-- Twitter -->
-<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
- 
+<a href="http://twitter.com/share?url=http://www.thisappisbetterthanyours&text=Simple Share Buttons&hashtags=swag" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
  
 </div>
 
